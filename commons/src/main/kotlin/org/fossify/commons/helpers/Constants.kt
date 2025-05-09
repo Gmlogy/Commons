@@ -377,6 +377,7 @@ const val TAB_FILES = 16
 const val TAB_RECENT_FILES = 32
 const val TAB_STORAGE_ANALYSIS = 64
 const val TAB_INCOMING_HISTORY = 128
+const val TAB_OUTGOING_HISTORY = 256
 
 val photoExtensions: Array<String>
     get() = arrayOf(
