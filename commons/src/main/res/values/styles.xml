@@ -23,6 +23,33 @@
         <item name="radioButtonStyle">@style/MyRadioButtonStyle</item>
     </style>
 
+
+<style name="MyDateTimePickerMaterialTheme_Light" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <item name="colorSurface">@color/commons_default_dialog_bg_color</item>
+        <item name="android:textColorPrimary">@color/commons_default_text_color</item>
+        <item name="colorPrimary">@color/commons_default_accent_color</item>
+        <item name="colorOnPrimary">@color/commons_default_text_on_accent_color</item>
+        <!-- ... other dialog attributes ... -->
+    </style>
+
+    <style name="AppTheme_PopupMenuLightStyle" parent="Widget.MaterialComponents.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/commons_default_dialog_bg_color</item>
+        <item name="android:textColor">@color/commons_default_text_color</item>
+    </style>
+    <!-- Ensure MyDialogTheme_Dark, MyDialogTheme, MyTimePickerMaterialTheme_Dark, AppTheme_YouPopupMenuStyle also exist or are handled -->
+     <style name="MyDialogTheme" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <!-- Define light attributes -->
+    </style>
+    <style name="MyDialogTheme_Dark" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+         <!-- Define attributes for a dark dialog if needed, or make it light too -->
+    </style>
+    <style name="MyTimePickerMaterialTheme_Dark" parent="ThemeOverlay.MaterialComponents.Dialog.Alert">
+        <!-- Define attributes for a dark time picker if needed, or make it light too -->
+    </style>
+     <style name="AppTheme_YouPopupMenuStyle" parent="Widget.MaterialComponents.PopupMenu.Overflow">
+        <!-- Define attributes for Material You popup menu -->
+    </style>
+
     <style name="AppTheme.Base.Core" parent="Theme.Material3.Dark.NoActionBar">
         <item name="android:colorControlHighlight">@color/activated_item_foreground</item>
         <item name="colorControlHighlight">@color/activated_item_foreground</item>
