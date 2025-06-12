@@ -38,6 +38,8 @@ data class Contact(
     var IMs: ArrayList<IM> = arrayListOf(),
     var mimetype: String = "",
     var ringtone: String? = ""
+    var timesContacted: Int = 0,
+    var lastTimeContacted: Long = 0L
 ) : Comparable<Contact> {
     val rawId = id
     val name = getNameToDisplay()
