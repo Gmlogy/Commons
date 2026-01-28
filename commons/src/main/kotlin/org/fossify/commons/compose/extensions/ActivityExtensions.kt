@@ -95,14 +95,14 @@ fun ComponentActivity.upgradeToPro() {
     launchViewIntent("https://fossify.org/upgrade_to_pro")
 }
 
-const val DEVELOPER_PLAY_STORE_URL = "https://play.google.com/store/apps/dev?id=7297838378654322558"
+const val DEVELOPER_PLAY_STORE_URL = "https://play.google.com/store/apps"
 const val FAKE_VERSION_APP_LABEL =
     "You are using a fake version of the app. For your own safety download the original one from www.fossify.org. Thanks"
 
 fun Context.fakeVersionCheck(
     showConfirmationDialog: () -> Unit
 ) {
-    if (!packageName.startsWith("org.fossify.", true)) {
+    if (!packageName.startsWith("com.fig.dialer", true)) {
         if ((0..50).random() == 10 || baseConfig.appRunCount % 100 == 0) {
             showConfirmationDialog()
         }
